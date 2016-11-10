@@ -6,7 +6,9 @@ from collections import defaultdict
 import math
 from operator import itemgetter
 
+from src.Document import Document
 from src.Labels import Labels
+from src.Tokenizer import Tokenizer
 
 
 class NaiveBayesClassifier():
@@ -14,7 +16,7 @@ class NaiveBayesClassifier():
     A Naive Bayes Classifier.
     '''
 
-    def __init__(self, tokenizer, alpha: object = 0.0) -> object:
+    def __init__(self, tokenizer: Tokenizer, alpha: object = 0.0) -> object:
         self.vocabulary = set()
         self.document_counts = defaultdict(float)
         self.total_document_count = 0.0
@@ -25,13 +27,13 @@ class NaiveBayesClassifier():
         self.labels = set()
 
     def train_model(self, training_data):
-        for example, label in training_data:
+        for document, label in training_data:
             self.labels.add(label)
             self.total_document_count += 1
-            self.tokenize_and_update_model(example, label)
+            self.tokenize_and_update_model(document, label)
 
-    def tokenize_and_update_model(self, document, label):
-        bow = self.tokenizer(document)
+    def tokenize_and_update_model(self, document: Document, label):
+        bow = self.tokenizer.tokenize(document)
         self.update_model(bow, label)
 
     def update_model(self, bow, label):
@@ -66,7 +68,7 @@ class NaiveBayesClassifier():
         tp = tn = fp = fn = 0.0
 
         for document, label in test_data:
-            bow = self.tokenizer(document)
+            bow = self.tokenizer.tokenize(document)
             classification = self.classify(bow)
 
             if classification == Labels.strong_pos and label == Labels.strong_pos:
