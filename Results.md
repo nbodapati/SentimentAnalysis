@@ -2,7 +2,7 @@
 ## Naive Bayes Classifier
 
 ###Simple Tokenizer
-| ALpha  | Review Polarity  Accuracy | IMDB Accuracy |
+| Alpha  | Review Polarity  Accuracy | IMDB Accuracy |
 |---|:---:|:---:|
 | 1  | 0.81  | 0.82312 |
 | 5  | 0.83  | 0.83088 |
@@ -15,3 +15,9 @@
 
 ![Simple Tokenizer Accuracy]
 (/results/Simple_Tokenizer_Accuracy.png)
+
+###Simple Tokenizer
+| Alpha  | Accuracy ||
+|   | Review Polarity | IMDB |
+|---|:---:|:---:|
+| 1  | 0.805  | 0.83364 |

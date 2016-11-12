@@ -1,5 +1,6 @@
 import os
 
+from src.AdvancedTokenizer import AdvancedTokenizer
 from src.FileDocument import FileDocument
 from src.Labels import Labels
 from src.NaiveBayesClassifier import NaiveBayesClassifier
@@ -85,9 +86,8 @@ def plotAccuracies(tokenizerName, alphas, reviewPolarityAccuracies, imdbAccuraci
     fig1.savefig("../results/{0}_Accuracy.png".format(tokenizerName.replace(" ", "_")))
 
 def printTable(tokenizerName, alphas, reviewPolarityAccuracies, imdbAccuracies):
-    print("###Simple Tokenizer")
-    print("| Alpha  | Accuracy ||")
-    print("|   | Review Polarity | IMDB |")
+    print("###{0}".format(tokenizerName))
+    print("| Alpha  | Review Polarity Accuracy | IMDB Accuracy |")
     print("|---|:---:|:---:|")
     for i in range(len(alphas)):
         print("| {0}  | {1}  | {2} |".format(alphas[i], reviewPolarityAccuracies[i], imdbAccuracies[i]))
@@ -98,8 +98,19 @@ def printTable(tokenizerName, alphas, reviewPolarityAccuracies, imdbAccuracies):
 # reviewPolarityAccuracies = evaluateReviewPolarity(K, tokenizer, alphas)
 # imdbAccuracies = evaluateIMDB(K, tokenizer, alphas)
 
-alphas = [1, 5, 10, 15, 20, 25, 30, 35]
-reviewPolarityAccuracies = [0.81, 0.83, 0.835, 0.8475, 0.8475, 0.85, 0.85, 0.845]
-imdbAccuracies = [0.82312, 0.83088, 0.83392, 0.83532, 0.83532, 0.83576, 0.83628, 0.83652]
+# alphas = [1, 5, 10, 15, 20, 25, 30, 35]
+# reviewPolarityAccuracies = [0.81, 0.83, 0.835, 0.8475, 0.8475, 0.85, 0.85, 0.845]
+# imdbAccuracies = [0.82312, 0.83088, 0.83392, 0.83532, 0.83532, 0.83576, 0.83628, 0.83652]
 
-printTable("Simple Tokenizer", alphas, reviewPolarityAccuracies, imdbAccuracies)
+# printTable("Simple Tokenizer", alphas, reviewPolarityAccuracies, imdbAccuracies)
+
+alphas = [5]
+tokenizer = AdvancedTokenizer()
+reviewPolarityAccuracies = evaluateReviewPolarity(K, tokenizer, alphas)
+imdbAccuracies = evaluateIMDB(K, tokenizer, alphas)
+
+# alphas = [1, 5, 10, 15, 20, 25, 30, 35]
+# reviewPolarityAccuracies = [0.81, 0.83, 0.835, 0.8475, 0.8475, 0.85, 0.85, 0.845]
+# imdbAccuracies = [0.82312, 0.83088, 0.83392, 0.83532, 0.83532, 0.83576, 0.83628, 0.83652]
+printTable("Advanced Tokenizer", alphas, reviewPolarityAccuracies, imdbAccuracies)
+
