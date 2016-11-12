@@ -12,7 +12,7 @@ class NaiveBayesClassifierTests(unittest.TestCase):
     def setUp(self):
         self.alpha = 0.65
         self.tokenizer = SimpleTokenizer()
-        self.nb = src.NaiveBayesClassifier.NaiveBayesClassifier(self.tokenizer, self.alpha)
+        self.nb = src.NaiveBayesClassifier.NaiveBayesClassifier(self.tokenizer)
 
     def test_init(self):
         self.assertEqual(self.nb.vocabulary, set())
@@ -20,7 +20,6 @@ class NaiveBayesClassifierTests(unittest.TestCase):
         self.assertEqual(self.nb.total_document_count, 0.0)
         self.assertDictEqual(self.nb.word_counts, defaultdict( lambda : defaultdict(float)))
         self.assertDictEqual(self.nb.total_word_counts, defaultdict(float))
-        self.assertEqual(self.nb.alpha, self.alpha)
         self.assertEqual(self.nb.tokenizer, self.tokenizer)
 
     def test_train_model(self):
@@ -74,7 +73,7 @@ class NaiveBayesClassifierTests(unittest.TestCase):
         mockDocument = Mock()
         mockDocument.getContent.return_value = "This is great"
         bow = self.tokenizer.tokenize(mockDocument)
-        label = self.nb.classify(bow)
+        label = self.nb.classify(bow, self.alpha)
         self.assertEqual(label, Labels.strong_pos)
 
     def test_evaluate(self):
@@ -128,5 +127,5 @@ class NaiveBayesClassifierTests(unittest.TestCase):
         mockDocument5.getContent.return_value = "this is a great movie"
         test_data.append( (mockDocument5, Labels.strong_pos))
 
-        accuracy = self.nb.evaluate(test_data)
+        accuracy = self.nb.evaluate(test_data, self.alpha)
         self.assertEqual(accuracy, 0.60)

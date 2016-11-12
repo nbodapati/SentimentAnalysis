@@ -5,11 +5,10 @@ class FileDocument:
     '''
     This is an implementation of the abstract document class to represent a document in the file system.
     '''
-    def __init__(self, path, filename):
-        self.path = path
-        self.filename = filename
+    def __init__(self, filePath):
+        self.filePath = filePath
 
     def getContent(self):
-        with open(os.path.join(self.path, self.filename), 'r') as doc:
+        with open(self.filePath, 'r') as doc:
             content = doc.read()
         return content
