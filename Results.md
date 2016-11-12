@@ -16,8 +16,10 @@
 ![Simple Tokenizer Accuracy]
 (/results/Simple_Tokenizer_Accuracy.png)
 
-###Simple Tokenizer
-| Alpha  | Accuracy ||
-|   | Review Polarity | IMDB |
+###Advanced Tokenizer
+| Alpha  | Review Polarity Accuracy | IMDB Accuracy |
 |---|:---:|:---:|
 | 1  | 0.805  | 0.83364 |
+ 5  | 0.8275  | 0.84168 |
+![Advanced Tokenizer Accuracy]
+(/results/Advanced_Tokenizer_Accuracy.png)

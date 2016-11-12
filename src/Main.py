@@ -104,7 +104,7 @@ def printTable(tokenizerName, alphas, reviewPolarityAccuracies, imdbAccuracies):
 
 # printTable("Simple Tokenizer", alphas, reviewPolarityAccuracies, imdbAccuracies)
 
-alphas = [5]
+alphas = [10]
 tokenizer = AdvancedTokenizer()
 reviewPolarityAccuracies = evaluateReviewPolarity(K, tokenizer, alphas)
 imdbAccuracies = evaluateIMDB(K, tokenizer, alphas)

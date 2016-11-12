@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a6d2d20-2ac4-44d6-8d2a-75026cb28987" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BigramTokenizer.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Results.md" afterPath="$PROJECT_DIR$/Results.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AdvancedTokenizer.py" afterPath="$PROJECT_DIR$/src/AdvancedTokenizer.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.py" afterPath="$PROJECT_DIR$/src/Main.py" />
     </list>
     <ignored path="SentimentAnalysis.iws" />
@@ -73,7 +70,7 @@
       <file leaf-file-name="Main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
+            <state relative-caret-position="138">
               <caret line="106" column="12" selection-start-line="106" selection-start-column="12" selection-end-line="106" selection-end-column="12" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
@@ -82,8 +79,8 @@
                 <element signature="e#1196#2008#0" expanded="false" />
                 <element signature="e#3648#4005#0" expanded="false" />
                 <element signature="e#4007#4022#0" expanded="false" />
-                <marker date="1478980625000" expanded="false" signature="2060:3049" ph="..." />
-                <marker date="1478980625000" expanded="false" signature="3135:3561" ph="..." />
+                <marker date="1478981178000" expanded="false" signature="2060:3049" ph="..." />
+                <marker date="1478981178000" expanded="false" signature="3135:3561" ph="..." />
               </folding>
             </state>
           </provider>
@@ -93,8 +90,8 @@
         <entry file="file://$PROJECT_DIR$/Results.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="320">
-                <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <first_editor relative-caret-position="185">
+                <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -647,8 +644,8 @@
             <element signature="e#1196#2008#0" expanded="false" />
             <element signature="e#3648#4005#0" expanded="false" />
             <element signature="e#4007#4022#0" expanded="false" />
-            <marker date="1478980625000" expanded="false" signature="2060:3049" ph="..." />
-            <marker date="1478980625000" expanded="false" signature="3135:3561" ph="..." />
+            <marker date="1478981178000" expanded="false" signature="2060:3049" ph="..." />
+            <marker date="1478981178000" expanded="false" signature="3135:3561" ph="..." />
           </folding>
         </state>
       </provider>
@@ -938,8 +935,8 @@
     <entry file="file://$PROJECT_DIR$/Results.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="320">
-            <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <first_editor relative-caret-position="185">
+            <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
@@ -951,7 +948,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
+        <state relative-caret-position="138">
           <caret line="106" column="12" selection-start-line="106" selection-start-column="12" selection-end-line="106" selection-end-column="12" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
@@ -960,8 +957,8 @@
             <element signature="e#1196#2008#0" expanded="false" />
             <element signature="e#3648#4005#0" expanded="false" />
             <element signature="e#4007#4022#0" expanded="false" />
-            <marker date="1478980625000" expanded="false" signature="2060:3049" ph="..." />
-            <marker date="1478980625000" expanded="false" signature="3135:3561" ph="..." />
+            <marker date="1478981178000" expanded="false" signature="2060:3049" ph="..." />
+            <marker date="1478981178000" expanded="false" signature="3135:3561" ph="..." />
           </folding>
         </state>
       </provider>
