@@ -93,9 +93,13 @@ def printTable(tokenizerName, alphas, reviewPolarityAccuracies, imdbAccuracies):
         print("| {0}  | {1}  | {2} |".format(alphas[i], reviewPolarityAccuracies[i], imdbAccuracies[i]))
     plotAccuracies(tokenizerName, alphas, reviewPolarityAccuracies, imdbAccuracies)
 
-alphas = [15]
+# alphas = [35]
+# tokenizer = SimpleTokenizer()
+# reviewPolarityAccuracies = evaluateReviewPolarity(K, tokenizer, alphas)
+# imdbAccuracies = evaluateIMDB(K, tokenizer, alphas)
 
-tokenizer = SimpleTokenizer()
-reviewPolarityAccuracies = evaluateReviewPolarity(K, tokenizer, alphas)
-imdbAccuracies = evaluateIMDB(K, tokenizer, alphas)
+alphas = [1, 5, 10, 15, 20, 25, 30, 35]
+reviewPolarityAccuracies = [0.81, 0.83, 0.835, 0.8475, 0.8475, 0.85, 0.85, 0.845]
+imdbAccuracies = [0.82312, 0.83088, 0.83392, 0.83532, 0.83532, 0.83576, 0.83628, 0.83652]
+
 printTable("Simple Tokenizer", alphas, reviewPolarityAccuracies, imdbAccuracies)
