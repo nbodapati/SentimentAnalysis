@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a6d2d20-2ac4-44d6-8d2a-75026cb28987" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/Advanced_Tokenizer_Accuracy.png" afterPath="$PROJECT_DIR$/results/Advanced_Tokenizer_Accuracy.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/Bigram_Tokenizer_Accuracy.png" afterPath="$PROJECT_DIR$/results/Bigram_Tokenizer_Accuracy.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Results.md" afterPath="$PROJECT_DIR$/Results.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.py" afterPath="$PROJECT_DIR$/src/Main.py" />
     </list>
@@ -41,8 +41,8 @@
       <file leaf-file-name="AdvancedTokenizer.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AdvancedTokenizer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="420">
+              <caret line="28" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -53,19 +53,16 @@
       <file leaf-file-name="Main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="178" column="105" selection-start-line="178" selection-start-column="105" selection-end-line="178" selection-end-column="105" />
+            <state relative-caret-position="120">
+              <caret line="181" column="103" selection-start-line="181" selection-start-column="103" selection-end-line="181" selection-end-column="103" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
                 <element signature="e#950#1122#0" expanded="false" />
                 <element signature="e#1517#1741#0" expanded="false" />
-                <element signature="e#1809#2658#0" expanded="false" />
-                <element signature="e#2716#3736#0" expanded="false" />
-                <element signature="e#3802#4625#0" expanded="false" />
                 <element signature="e#4484#4603#0" expanded="false" />
                 <element signature="e#4741#5371#0" expanded="false" />
                 <element signature="e#5483#5897#0" expanded="false" />
-                <element signature="e#5947#6263#0" expanded="false" />
+                <element signature="e#5947#6266#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -115,17 +112,27 @@
       </file>
       <file leaf-file-name="Results.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Results.md">
-          <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="435">
-                <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <first_editor relative-caret-position="504">
+                <caret line="47" column="16" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
                 <folding />
               </first_editor>
               <second_editor />
             </state>
           </provider>
-          <provider selected="true" editor-type-id="MarkdownFxPreviewEditor">
+          <provider editor-type-id="MarkdownFxPreviewEditor">
             <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BigramTokenizer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BigramTokenizer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -154,19 +161,19 @@
         <option value="$PROJECT_DIR$/src/Document.py" />
         <option value="$PROJECT_DIR$/src/SimpleTokenizer.py" />
         <option value="$PROJECT_DIR$/tests/NaiveBayesClassifierTests.py" />
-        <option value="$PROJECT_DIR$/src/BigramTokenizer.py" />
         <option value="$PROJECT_DIR$/src/NaiveBayesClassifier.py" />
         <option value="$PROJECT_DIR$/src/FileDocument.py" />
         <option value="$PROJECT_DIR$/src/SentenceDocument.py" />
         <option value="$PROJECT_DIR$/src/Labels.py" />
         <option value="$PROJECT_DIR$/src/AdvancedTokenizer.py" />
+        <option value="$PROJECT_DIR$/src/BigramTokenizer.py" />
         <option value="$PROJECT_DIR$/src/Main.py" />
         <option value="$PROJECT_DIR$/Results.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="27" />
+    <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="724" />
   </component>
@@ -495,7 +502,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1280" height="724" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="724" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17633042" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -654,13 +661,10 @@
             <element signature="e#0#13#0" expanded="true" />
             <element signature="e#950#1122#0" expanded="false" />
             <element signature="e#1517#1741#0" expanded="false" />
-            <element signature="e#1809#2658#0" expanded="false" />
-            <element signature="e#2716#3736#0" expanded="false" />
-            <element signature="e#3802#4625#0" expanded="false" />
             <element signature="e#4484#4603#0" expanded="false" />
             <element signature="e#4741#5371#0" expanded="false" />
             <element signature="e#5483#5897#0" expanded="false" />
-            <element signature="e#5947#6263#0" expanded="false" />
+            <element signature="e#5947#6266#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -875,16 +879,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BigramTokenizer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#35#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SimpleTokenizer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -956,16 +950,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AdvancedTokenizer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/NaiveBayesClassifier.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
@@ -996,36 +980,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/AdvancedTokenizer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BigramTokenizer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="178" column="105" selection-start-line="178" selection-start-column="105" selection-end-line="178" selection-end-column="105" />
+        <state relative-caret-position="120">
+          <caret line="181" column="103" selection-start-line="181" selection-start-column="103" selection-end-line="181" selection-end-column="103" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
             <element signature="e#950#1122#0" expanded="false" />
             <element signature="e#1517#1741#0" expanded="false" />
-            <element signature="e#1809#2658#0" expanded="false" />
-            <element signature="e#2716#3736#0" expanded="false" />
-            <element signature="e#3802#4625#0" expanded="false" />
             <element signature="e#4484#4603#0" expanded="false" />
             <element signature="e#4741#5371#0" expanded="false" />
             <element signature="e#5483#5897#0" expanded="false" />
-            <element signature="e#5947#6263#0" expanded="false" />
+            <element signature="e#5947#6266#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Results.md">
-      <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="435">
-            <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <first_editor relative-caret-position="504">
+            <caret line="47" column="16" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
             <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="MarkdownFxPreviewEditor">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
         <state />
       </provider>
     </entry>
