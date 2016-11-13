@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a6d2d20-2ac4-44d6-8d2a-75026cb28987" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/Simple_Tokenizer_Accuracy.png" afterPath="$PROJECT_DIR$/results/Simple_Tokenizer_Accuracy.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Results.md" afterPath="$PROJECT_DIR$/Results.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AdvancedTokenizer.py" afterPath="$PROJECT_DIR$/src/AdvancedTokenizer.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.py" afterPath="$PROJECT_DIR$/src/Main.py" />
     </list>
     <ignored path="SentimentAnalysis.iws" />
@@ -27,40 +26,45 @@
       <file leaf-file-name="NaiveBayesClassifier.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NaiveBayesClassifier.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+            <state relative-caret-position="196">
+              <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
               <folding>
                 <element signature="e#9#44#0" expanded="true" />
                 <element signature="e#1938#2103#0" expanded="false" />
                 <element signature="e#2161#2469#0" expanded="false" />
-                <element signature="e#2510#2689#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tokenizer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Tokenizer.py">
+      <file leaf-file-name="AdvancedTokenizer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AdvancedTokenizer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="360">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="134" column="14" selection-start-line="134" selection-start-column="14" selection-end-line="134" selection-end-column="14" />
+            <state relative-caret-position="208">
+              <caret line="188" column="20" selection-start-line="188" selection-start-column="20" selection-end-line="188" selection-end-column="20" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
                 <element signature="e#950#1122#0" expanded="false" />
                 <element signature="e#1517#1741#0" expanded="false" />
                 <element signature="e#1809#2658#0" expanded="false" />
                 <element signature="e#2716#3736#0" expanded="false" />
-                <element signature="e#5947#6249#0" expanded="false" />
+                <element signature="e#3802#4625#0" expanded="false" />
+                <element signature="e#4484#4603#0" expanded="false" />
+                <element signature="e#4741#5371#0" expanded="false" />
+                <element signature="e#5483#5897#0" expanded="false" />
+                <element signature="e#5947#6263#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -96,13 +100,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Simple_Tokenizer_Accuracy.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/results/Simple_Tokenizer_Accuracy.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SentenceDocument.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SentenceDocument.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -115,17 +112,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Labels.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Labels.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="12" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Results.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Results.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Results.md">
           <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
@@ -166,19 +153,19 @@
         <option value="$PROJECT_DIR$/src/Document.py" />
         <option value="$PROJECT_DIR$/src/SimpleTokenizer.py" />
         <option value="$PROJECT_DIR$/tests/NaiveBayesClassifierTests.py" />
-        <option value="$PROJECT_DIR$/src/AdvancedTokenizer.py" />
         <option value="$PROJECT_DIR$/src/BigramTokenizer.py" />
         <option value="$PROJECT_DIR$/src/NaiveBayesClassifier.py" />
         <option value="$PROJECT_DIR$/src/FileDocument.py" />
         <option value="$PROJECT_DIR$/src/SentenceDocument.py" />
         <option value="$PROJECT_DIR$/src/Labels.py" />
         <option value="$PROJECT_DIR$/Results.md" />
+        <option value="$PROJECT_DIR$/src/AdvancedTokenizer.py" />
         <option value="$PROJECT_DIR$/src/Main.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="y" value="27" />
     <option name="width" value="1280" />
     <option name="height" value="724" />
   </component>
@@ -507,17 +494,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="724" extended-state="6" />
+    <frame x="0" y="27" width="1280" height="724" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17633042" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17633042" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19620253" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.511076" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7328" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39873418" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -643,7 +630,6 @@
             <element signature="e#9#44#0" expanded="true" />
             <element signature="e#1938#2103#0" expanded="false" />
             <element signature="e#2161#2469#0" expanded="false" />
-            <element signature="e#2510#2689#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -669,7 +655,11 @@
             <element signature="e#1517#1741#0" expanded="false" />
             <element signature="e#1809#2658#0" expanded="false" />
             <element signature="e#2716#3736#0" expanded="false" />
-            <element signature="e#5947#6249#0" expanded="false" />
+            <element signature="e#3802#4625#0" expanded="false" />
+            <element signature="e#4484#4603#0" expanded="false" />
+            <element signature="e#4741#5371#0" expanded="false" />
+            <element signature="e#5483#5897#0" expanded="false" />
+            <element signature="e#5947#6263#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -682,7 +672,6 @@
             <element signature="e#9#44#0" expanded="true" />
             <element signature="e#1938#2103#0" expanded="false" />
             <element signature="e#2161#2469#0" expanded="false" />
-            <element signature="e#2510#2689#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -706,7 +695,6 @@
             <element signature="e#9#44#0" expanded="true" />
             <element signature="e#1938#2103#0" expanded="false" />
             <element signature="e#2161#2469#0" expanded="false" />
-            <element signature="e#2510#2689#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -727,7 +715,6 @@
             <element signature="e#9#44#0" expanded="true" />
             <element signature="e#1938#2103#0" expanded="false" />
             <element signature="e#2161#2469#0" expanded="false" />
-            <element signature="e#2510#2689#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -758,7 +745,6 @@
             <element signature="e#9#44#0" expanded="true" />
             <element signature="e#1938#2103#0" expanded="false" />
             <element signature="e#2161#2469#0" expanded="false" />
-            <element signature="e#2510#2689#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -906,16 +892,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AdvancedTokenizer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="60" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="60" />
-          <folding>
-            <element signature="e#0#35#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/FileDocument.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -934,6 +910,100 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tokenizer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="308" column="0" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/matplotlib/pyplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="3559" column="19" selection-start-line="3559" selection-start-column="19" selection-end-line="3559" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/matplotlib/figure.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="505" column="8" selection-start-line="505" selection-start-column="8" selection-end-line="505" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/Simple_Tokenizer_Accuracy.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/matplotlib/axes/_axes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="359" column="0" selection-start-line="359" selection-start-column="0" selection-end-line="359" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AdvancedTokenizer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NaiveBayesClassifier.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
+          <folding>
+            <element signature="e#9#44#0" expanded="true" />
+            <element signature="e#1938#2103#0" expanded="false" />
+            <element signature="e#2161#2469#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="188" column="20" selection-start-line="188" selection-start-column="20" selection-end-line="188" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#950#1122#0" expanded="false" />
+            <element signature="e#1517#1741#0" expanded="false" />
+            <element signature="e#1809#2658#0" expanded="false" />
+            <element signature="e#2716#3736#0" expanded="false" />
+            <element signature="e#3802#4625#0" expanded="false" />
+            <element signature="e#4484#4603#0" expanded="false" />
+            <element signature="e#4741#5371#0" expanded="false" />
+            <element signature="e#5483#5897#0" expanded="false" />
+            <element signature="e#5947#6263#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labels.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SentenceDocument.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -941,27 +1011,6 @@
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NaiveBayesClassifier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
-          <folding>
-            <element signature="e#9#44#0" expanded="true" />
-            <element signature="e#1938#2103#0" expanded="false" />
-            <element signature="e#2161#2469#0" expanded="false" />
-            <element signature="e#2510#2689#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tokenizer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -977,66 +1026,6 @@
       </provider>
       <provider selected="true" editor-type-id="MarkdownFxPreviewEditor">
         <state />
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="308" column="0" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/Simple_Tokenizer_Accuracy.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/matplotlib/pyplot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="3559" column="19" selection-start-line="3559" selection-start-column="19" selection-end-line="3559" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/matplotlib/axes/_axes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="359" column="0" selection-start-line="359" selection-start-column="0" selection-end-line="359" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labels.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/matplotlib/figure.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="505" column="8" selection-start-line="505" selection-start-column="8" selection-end-line="505" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="134" column="14" selection-start-line="134" selection-start-column="14" selection-end-line="134" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#950#1122#0" expanded="false" />
-            <element signature="e#1517#1741#0" expanded="false" />
-            <element signature="e#1809#2658#0" expanded="false" />
-            <element signature="e#2716#3736#0" expanded="false" />
-            <element signature="e#5947#6249#0" expanded="false" />
-          </folding>
-        </state>
       </provider>
     </entry>
   </component>

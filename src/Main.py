@@ -149,31 +149,33 @@ def printTable(tokenizerName, alphas, reviewPolarityAccuracies, imdbAccuracies, 
 def printClassifierStatistics(classifier):
     classifier.report_statistics_after_training()
     print("Top 20 tokens in the positive class")
-    for token in classifier.top_n(Labels.strong_pos, 20):
+    for token, count in classifier.top_n(Labels.strong_pos, 20):
         print(token)
 
     print("Top 20 tokens in the negative class")
-    for token in classifier.top_n(Labels.strong_neg, 20):
+    for token, count in classifier.top_n(Labels.strong_neg, 20):
         print(token)
 
 
 alphas = [1, 5, 10, 15, 20, 25, 30, 35]
-tokenizer = SimpleTokenizer()
+# tokenizer = SimpleTokenizer()
 # reviewPolarityAccuracies = evaluateReviewPolarity(K, tokenizer, alphas)
 # imdbAccuracies = evaluateIMDB(K, tokenizer, alphas)
 # subjectivityAccuracies = evaluateSubjectivity(K, tokenizer, alphas)
 
-reviewPolarityAccuracies = [0.81, 0.83, 0.835, 0.8475, 0.8475, 0.85, 0.85, 0.845]
-imdbAccuracies = [0.82312, 0.83088, 0.83392, 0.83532, 0.83532, 0.83576, 0.83628, 0.83652]
-subjectivityAccuracies = [0.916083916, 0.919080919, 0.919080919, 0.918081918, 0.914585415, 0.911588412, 0.90959041, 0.908591409]
-printTable("Simple Tokenizer", alphas, reviewPolarityAccuracies, imdbAccuracies, subjectivityAccuracies)
+# reviewPolarityAccuracies = [0.81, 0.83, 0.835, 0.8475, 0.8475, 0.85, 0.85, 0.845]
+# imdbAccuracies = [0.82312, 0.83088, 0.83392, 0.83532, 0.83532, 0.83576, 0.83628, 0.83652]
+# subjectivityAccuracies = [0.916083916, 0.919080919, 0.919080919, 0.918081918, 0.914585415, 0.911588412, 0.90959041, 0.908591409]
+# printTable("Simple Tokenizer", alphas, reviewPolarityAccuracies, imdbAccuracies, subjectivityAccuracies)
 
-# tokenizer = AdvancedTokenizer()
+tokenizer = AdvancedTokenizer()
 # reviewPolarityAccuracies = evaluateReviewPolarity(K, tokenizer, alphas)
-# imdbAccuracies = evaluateIMDB(K, tokenizer, alphas)
+imdbAccuracies = evaluateIMDB(K, tokenizer, alphas)
+# subjectivityAccuracies = evaluateSubjectivity(K, tokenizer, alphas)
 
-# reviewPolarityAccuracies = [0.805, 0.8275, 0.8275, 0.83, 0.8425, 0.8325, 0.8425, 0.8275]
-# imdbAccuracies = [0.83364, 0.84168, 0.8436, 0.84436, 0.84496, 0.84532, 0.84548, 0.84592]
+# reviewPolarityAccuracies = [0.8025, 0.8225, 0.83, 0.835, 0.8425, 0.8375, 0.8275, 0.8075]
+# imdbAccuracies = [0.82312, 0.83088, 0.83392, 0.83532, 0.83532, 0.83576, 0.83628, 0.83652]
+# subjectivityAccuracies = [0.8961038961038961, 0.9050949050949051, 0.9050949050949051, 0.9015984015984015, 0.8986013986013986, 0.8966033966033966, 0.8946053946053946, 0.8931068931068931]
 # printTable("Advanced Tokenizer", alphas, reviewPolarityAccuracies, imdbAccuracies)
 
 # tokenizer = BigramTokenizer()
@@ -184,4 +186,4 @@ printTable("Simple Tokenizer", alphas, reviewPolarityAccuracies, imdbAccuracies,
 # imdbAccuracies = [0.83364, 0.84168, 0.8436, 0.84436, 0.84496, 0.84532, 0.84548, 0.84592]
 # printTable("Bigram Tokenizer", alphas, reviewPolarityAccuracies, imdbAccuracies)
 
-# print(subjectivityAccuracies)
+print(imdbAccuracies)
