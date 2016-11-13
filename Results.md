@@ -2,16 +2,16 @@
 ## Naive Bayes Classifier
 
 ###Simple Tokenizer
-| Alpha  | Review Polarity  Accuracy | IMDB Accuracy |
+| Alpha  | Review Polarity  Accuracy | IMDB Accuracy |Subjectivity Accuracy|
 |---|:---:|:---:|
-| 1  | 0.81  | 0.82312 |
-| 5  | 0.83  | 0.83088 |
-| 10  | 0.835  | 0.83392 |
-| 15  | 0.8475  | 0.83532 |
-| 20  | 0.8475  | 0.83532 |
-| 25  | 0.85  | 0.83576 |
-| 30  | 0.85  | 0.83628 |
-| 35  | 0.845  | 0.83652 |
+| 1  | 0.81  | 0.82312 |0.916083916083916|
+| 5  | 0.83  | 0.83088 |0.919080919080919|
+| 10  | 0.835  | 0.83392 |0.919080919080919|
+| 15  | 0.8475  | 0.83532 |0.9180819180819181|
+| 20  | 0.8475  | 0.83532 |0.9145854145854145|
+| 25  | 0.85  | 0.83576 |0.9115884115884116|
+| 30  | 0.85  | 0.83628 |0.9095904095904096|
+| 35  | 0.845  | 0.83652 |0.9085914085914086|
 
 ![Simple Tokenizer Accuracy]
 (/results/Simple_Tokenizer_Accuracy.png)
@@ -30,3 +30,9 @@
 
 ![Advanced Tokenizer Accuracy]
 (/results/Advanced_Tokenizer_Accuracy.png)
+
+###Bigram Tokenizer
+| Alpha  | Review Polarity Accuracy | IMDB Accuracy |
+|---|:---:|:---:|
+| 1  | 0.8425  | 0.8624 |
+| 5  | 0.86  | 0.86788 |

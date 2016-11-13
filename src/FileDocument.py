@@ -1,7 +1,9 @@
 import os
 
+from src.Document import Document
 
-class FileDocument:
+
+class FileDocument(Document):
     '''
     This is an implementation of the abstract document class to represent a document in the file system.
     '''

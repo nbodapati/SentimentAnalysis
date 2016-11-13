@@ -63,6 +63,23 @@ class NaiveBayesClassifier():
         class_label = max(scores, key=itemgetter(1))[0]
         return class_label
 
+    def report_statistics_after_training(self):
+        """
+        Report a number of statistics after training.
+        """
+
+        print("Vocabulary Size: Number of unique word types in training corpus:", len(self.vocabulary))
+        for label in self.labels:
+            print("Number of tokens in {0} class: {1}".format(label, len(self.word_counts[label])))
+
+    def top_n(self, label, n):
+        """
+
+        Returns the most frequent n tokens for documents with class 'label'.
+        """
+        return sorted(self.word_counts[label].items(), key=lambda item: -item[1])[:n]
+
+
     def evaluate(self, test_data, alpha):
         tp = tn = fp = fn = 0.0
 
