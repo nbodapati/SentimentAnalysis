@@ -121,24 +121,29 @@ def evaluateSubjectivity(k, tokenizer: Tokenizer, alphas):
     return accuracies
 
 
-def plotAccuracies(tokenizerName, alphas, reviewPolarityAccuracies, imdbAccuracies):
-    line_rp, = plt.plot(alphas, reviewPolarityAccuracies, 'r', label='Review Polarity')
-    line_imdb, = plt.plot(alphas, imdbAccuracies, 'b', label='IMDB')
-    plt.legend(handles=[line_rp, line_imdb], bbox_to_anchor=(0., 1.02, 1., .102), loc=3,
-               ncol=2, borderaxespad=0.)
-    fig1 = plt.gcf()
+def plotAccuracies(tokenizerName, alphas, reviewPolarityAccuracies, imdbAccuracies, subjectivityAccuracies):
+    line_rp, = plt.plot(alphas, reviewPolarityAccuracies, 'r', label='PL04')
+    line_imdb, = plt.plot(alphas, imdbAccuracies, 'b', label='IMDB Dataset')
+    line_subjectivity, = plt.plot(alphas, subjectivityAccuracies, 'g', label='Subjectivity')
+
+    plt.legend(handles=[line_rp, line_imdb, line_subjectivity], bbox_to_anchor=(0., 1.02, 1., .102), loc=5,
+               ncol=3, mode="expand", borderaxespad=0.)
+    plt.xlabel('Pseduo counts', fontsize=16)
+    plt.ylabel('Accuracy', fontsize=16)
+
+    fig = plt.gcf()
     plt.show()
     plt.draw()
-    fig1.savefig("../results/{0}_Accuracy.png".format(tokenizerName.replace(" ", "_")))
+    fig.savefig("../results/{0}_Accuracy.png".format(tokenizerName.replace(" ", "_")))
 
 
-def printTable(tokenizerName, alphas, reviewPolarityAccuracies, imdbAccuracies):
+def printTable(tokenizerName, alphas, reviewPolarityAccuracies, imdbAccuracies, subjectivityAccuracies):
     print("###{0}".format(tokenizerName))
-    print("| Alpha  | Review Polarity Accuracy | IMDB Accuracy |")
-    print("|---|:---:|:---:|")
+    print("| Alpha  | PL04 | IMDB Dataset | Subjectivity |")
+    print("|---|:---:|:---:|:---:|")
     for i in range(len(alphas)):
-        print("| {0}  | {1}  | {2} |".format(alphas[i], reviewPolarityAccuracies[i], imdbAccuracies[i]))
-    plotAccuracies(tokenizerName, alphas, reviewPolarityAccuracies, imdbAccuracies)
+        print("| {0}  | {1}  | {2} | {3} |".format(alphas[i], reviewPolarityAccuracies[i], imdbAccuracies[i], subjectivityAccuracies[i]))
+    plotAccuracies(tokenizerName, alphas, reviewPolarityAccuracies, imdbAccuracies, subjectivityAccuracies)
 
 
 def printClassifierStatistics(classifier):
@@ -152,16 +157,16 @@ def printClassifierStatistics(classifier):
         print(token)
 
 
-alphas = [5, 10, 15, 20, 25, 30, 35]
+alphas = [1, 5, 10, 15, 20, 25, 30, 35]
 tokenizer = SimpleTokenizer()
 # reviewPolarityAccuracies = evaluateReviewPolarity(K, tokenizer, alphas)
 # imdbAccuracies = evaluateIMDB(K, tokenizer, alphas)
-subjectivityAccuracies = evaluateSubjectivity(K, tokenizer, alphas)
+# subjectivityAccuracies = evaluateSubjectivity(K, tokenizer, alphas)
 
-# reviewPolarityAccuracies = [0.81, 0.83, 0.835, 0.8475, 0.8475, 0.85, 0.85, 0.845]
-# imdbAccuracies = [0.82312, 0.83088, 0.83392, 0.83532, 0.83532, 0.83576, 0.83628, 0.83652]
-
-# printTable("Simple Tokenizer", alphas, reviewPolarityAccuracies, imdbAccuracies)
+reviewPolarityAccuracies = [0.81, 0.83, 0.835, 0.8475, 0.8475, 0.85, 0.85, 0.845]
+imdbAccuracies = [0.82312, 0.83088, 0.83392, 0.83532, 0.83532, 0.83576, 0.83628, 0.83652]
+subjectivityAccuracies = [0.916083916, 0.919080919, 0.919080919, 0.918081918, 0.914585415, 0.911588412, 0.90959041, 0.908591409]
+printTable("Simple Tokenizer", alphas, reviewPolarityAccuracies, imdbAccuracies, subjectivityAccuracies)
 
 # tokenizer = AdvancedTokenizer()
 # reviewPolarityAccuracies = evaluateReviewPolarity(K, tokenizer, alphas)
@@ -179,4 +184,4 @@ subjectivityAccuracies = evaluateSubjectivity(K, tokenizer, alphas)
 # imdbAccuracies = [0.83364, 0.84168, 0.8436, 0.84436, 0.84496, 0.84532, 0.84548, 0.84592]
 # printTable("Bigram Tokenizer", alphas, reviewPolarityAccuracies, imdbAccuracies)
 
-print(subjectivityAccuracies)
+# print(subjectivityAccuracies)
